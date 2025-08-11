@@ -1,0 +1,119 @@
+/* إعادة ضبط بسيطة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* الشريط العلوي */
+header {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* الصورة الرئيسية */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: #ffcc00;
+}
+
+/* أنواع السيارات */
+#types {
+    padding: 30px;
+    text-align: center;
+}
+
+.types-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.type-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.type-card:hover {
+    transform: scale(1.05);
+}
+
+/* المعرض */
+#gallery {
+    padding: 30px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* التذييل */
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
